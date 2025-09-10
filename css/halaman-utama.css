@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #1A2A80;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    padding-inline: 4rem;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    /* biar berjejer */
+    margin: 0 10px;
+}
+
+
+nav {
+     background: linear-gradient(135deg, #000, #3A0CA3, #9D50BB, #3A0CA3, #000);
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+.btn-lanjut {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #FFC1CC, #FF69B4);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    /* bikin lonjong */
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-lanjut:hover {
+    background: linear-gradient(135deg, #FFC1CC, #FF69B4);
+    transform: scale(1.05);
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
