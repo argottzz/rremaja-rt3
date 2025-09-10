@@ -111,7 +111,6 @@ header {
   display: inline;
 }
 
-/* FOTO */
 .foto-container {
   display: flex;
   gap: 15px;
@@ -165,7 +164,6 @@ header {
   cursor: pointer;
 }
 
-/* Video Container */
 .video-container {
   display: flex;
   gap: 10px;
@@ -314,4 +312,5 @@ header {
     gap: 15px;
     overflow-x: hidden;  /* hilangkan scroll horizontal */
   }
+
 }
