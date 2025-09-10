@@ -111,84 +111,48 @@ header {
   display: inline;
 }
 
+/* FOTO */
 .foto-container {
   display: flex;
   gap: 15px;
   overflow-x: auto;   /* bisa digeser ke samping */
   padding: 10px;
   flex-wrap: nowrap;  /* cegah turun ke bawah */
+  scroll-behavior: smooth; /* biar halus */
 }
 
-.foto-card {
-  flex: 0 0 auto;     /* biar tetap horizontal */
-  width: 250px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 10px;
-}
-
-.foto-section {
-  text-align: center;
-  margin: 20px;
-}
-
-.foto-section h2 {
-  color: #21456A;
-  margin-bottom: 15px;
-}
-
-.foto-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-#foto {
-  display: flex !important;       /* paksa flex */
-  flex-direction: row !important; /* pastikan sejajar ke samping */
-  flex-wrap: nowrap;              /* jangan turun ke bawah */
-  gap: 15px;
-  overflow-x: auto;
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-}
-
-#foto img {
-  width: 250px;
-  height: 200px;
-  flex-shrink: 0;   /* jangan mengecil */
-  border-radius: 10px;
-  cursor: pointer;
-}
-
+/* VIDEO */
 .video-container {
   display: flex;
-  gap: 10px;
-  overflow-x: auto;
+  gap: 15px;
+  overflow-x: auto;   /* bisa digeser ke samping */
   padding: 10px;
-  max-width: 100%;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
 }
 
-.video-card {
-  flex: 0 0 auto;  
-  max-width: 100%;
-  height: auto;
+/* FOTO & VIDEO: ukuran seragam */
+.foto-card, .video-card {
+  flex: 0 0 auto;
+  width: 250px;       /* samakan lebar */
+  height: 200px;      /* samakan tinggi */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.foto-card img, 
 .video-card video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;  /* biar isi pas, tidak ketarik */
   border-radius: 8px;
   display: block;
 }
-
 .btn-lanjut, .btn-tiktok, .btn-yutub, .btn-spotipi, .btn-watsap, .btn-drive {
   display: flex;
   flex: 1;
@@ -314,3 +278,4 @@ header {
   }
 
 }
+
