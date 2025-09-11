@@ -79,6 +79,11 @@ ul {
   gap: 2rem;
 }
 
+.white {
+ color: white;
+ font-weight: bold;
+}
+
 nav li {
   display: inline-block;
   margin: 0 10px;
@@ -276,3 +281,4 @@ header {
     overflow-x: hidden; /* grid tidak perlu scroll */
   }
 }
+
