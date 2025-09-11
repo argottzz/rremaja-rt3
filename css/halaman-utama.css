@@ -75,6 +75,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin: 10px 0;   /* ✅ kasih jarak atas bawah */
 }
 
 ul {
@@ -85,8 +86,7 @@ ul {
 
 nav li {
     display: inline-block;
-    /* biar berjejer */
-    margin: 0 10px;
+    margin: 0 15px;   /* ✅ jarak kanan kiri */
 }
 
 
@@ -163,3 +163,4 @@ header {
     }
 
 }
+
