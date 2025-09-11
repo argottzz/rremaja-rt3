@@ -268,14 +268,11 @@ header {
   }
 }
 
-/* Alternatif untuk galeri foto & video agar bisa jadi grid di tablet */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .foto-container, .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    overflow-x: hidden;  /* hilangkan scroll horizontal */
+    overflow-x: hidden; /* grid tidak perlu scroll */
   }
-
 }
-
