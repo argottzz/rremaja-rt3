@@ -68,10 +68,12 @@ nav a:hover {
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0;   /* ✅ kasih jarak atas bawah */
 }
+
 
 ul {
   padding-inline: 4rem;
@@ -85,8 +87,8 @@ ul {
 }
 
 nav li {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;   /* ✅ jarak kanan kiri */
 }
 
 nav {
@@ -281,4 +283,5 @@ header {
     overflow-x: hidden; /* grid tidak perlu scroll */
   }
 }
+
 
