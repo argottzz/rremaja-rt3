@@ -33,7 +33,8 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
+   color: red;
+  font-weight: bold;
 }
 
 .profile header {
@@ -283,5 +284,6 @@ header {
     overflow-x: hidden; /* grid tidak perlu scroll */
   }
 }
+
 
 
