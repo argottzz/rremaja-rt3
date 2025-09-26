@@ -15,7 +15,7 @@ body {
 }
 
 h2 {
-    color: #1A2A80;
+    color: #e70b5a;
 }
 
 h3 {
@@ -29,8 +29,7 @@ p {
 footer {
     padding: 20px;
     color: white;
-    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
-
+    background-color: #ffa1ba;
     text-align: center;
     font-weight: bold;
 }
@@ -44,8 +43,8 @@ nav a {
 }
 
 nav a:hover {
-   color: red;
-  font-weight: bold;
+    font-weight: bold;
+    color: #e70b5a;
 }
 
 .profile header {
@@ -74,7 +73,7 @@ nav a:hover {
 .jumbotron {
     font-size: 20px;
     padding: 60px;
-    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+    background-color: #ffa1ba;
     text-align: center;
     color: white;
 }
@@ -83,7 +82,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    margin: 10px 0;   /* ✅ kasih jarak atas bawah */
 }
 
 ul {
@@ -94,12 +92,12 @@ ul {
 
 nav li {
     display: inline-block;
-    margin: 0 15px;   /* ✅ jarak kanan kiri */
+    margin: 0 10px;
 }
 
 
 nav {
-    background: linear-gradient(135deg, #000, #3A0CA3, #9D50BB, #3A0CA3, #000);
+    background-color: #F1879E;
     padding: 5px;
 
     position: sticky;
@@ -122,47 +120,60 @@ main {
     gap: 1rem 2rem;
 }
 
-.btn-lanjut, .btn-sc, .btn-ig, .btn-tiktok, .btn-yutub, .btn-spotipi, .btn-watsap, .btn-drive{
-  display: flex;
-  flex: 1;
-  min-width: 120px;
+.btn-lanjut,
+.btn-sc,
+.btn-ig,
+.btn-tiktok,
+.btn-yutub,
+.btn-spotipi,
+.btn-watsap,
+.btn-drive {
+    display: flex;
+    flex: 1;
+    min-width: 120px;
     justify-content: center;
-  align-items: center; 
-  padding: 12px 28px;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  margin: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 15px;
-  letter-spacing: 1px;
-  transition: transform 0.2s ease;
+    align-items: center;
+    padding: 12px 28px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
 }
 
 .btn-lanjut {
-     background: linear-gradient(135deg, #FFC1CC, #FF69B4);
+    background: linear-gradient(135deg, #FFC1CC, #FF69B4);
 }
+
 .btn-sc {
     background: linear-gradient(45deg, white, #ffeb3b, white);
 }
+
 .btn-ig {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
+
 .btn-tiktok {
-  background: linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
+    background: linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
 }
+
 .btn-yutub {
-  background: linear-gradient(45deg, #FF0000, #CC0000, #FF4E45);
+    background: linear-gradient(45deg, #FF0000, #CC0000, #FF4E45);
 }
+
 .btn-spotipi {
-  background: linear-gradient(45deg, #1DB954, #1ed760, #191414);
+    background: linear-gradient(45deg, #1DB954, #1ed760, #191414);
 }
+
 .btn-watsap {
-  background: linear-gradient(45deg, #25D366, #128C7E);
+    background: linear-gradient(45deg, #25D366, #128C7E);
 }
-  
+
 
 .btn-lanjut:hover,
 .btn-sc:hover,
@@ -172,7 +183,7 @@ main {
 .btn-spotipi:hover,
 .btn-drive:hover,
 .btn-watsap:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 header {
@@ -200,4 +211,5 @@ header {
     }
 
 }
+
 
