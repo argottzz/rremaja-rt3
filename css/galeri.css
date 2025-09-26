@@ -211,38 +211,21 @@ header {
   color: red;
 }
 
-/* FOTO */
-.foto-container {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  /* bisa digeser ke samping */
-  padding: 10px;
-  flex-wrap: nowrap;
-  /* cegah turun ke bawah */
-  scroll-behavior: smooth;
-  /* biar halus */
-}
-
-/* VIDEO */
+.foto-container,
 .video-container {
   display: flex;
   gap: 15px;
   overflow-x: auto;
-  /* bisa digeser ke samping */
   padding: 10px;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* biar geser ke samping */
   scroll-behavior: smooth;
 }
 
-/* FOTO & VIDEO: ukuran seragam */
 .foto-card,
 .video-card {
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* ukuran tetap, tidak mengecil */
   width: 250px;
-  /* samakan lebar */
   height: 200px;
-  /* samakan tinggi */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -256,14 +239,12 @@ header {
 .video-card video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  /* biar isi pas, tidak ketarik */
+  object-fit: cover; /* biar proporsional */
   border-radius: 8px;
   display: block;
 }
 
 
-/* RESPONSIVE */
 @media screen and (max-width: 1200px) {
   main {
     flex-flow: column nowrap;
@@ -301,16 +282,5 @@ header {
   .btn-drive {
     flex: 1 1 100%;
     margin: 5px 0;
-  }
-  }
-
-@media screen and (max-width: 992px) {
-
-  .foto-container,
-  .video-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    overflow-x: hidden;
   }
 }
