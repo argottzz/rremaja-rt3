@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-    color: #1A2A80;
+    color: #e70b5a;
 }
 
 p {
@@ -21,7 +21,7 @@ p {
 footer {
     padding: 20px;
     color: white;
-    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+    background-color: #ffa1ba;
     text-align: center;
     font-weight: bold;
 }
@@ -35,8 +35,8 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
-  font-weight: bold;
+    font-weight: bold;
+    color: #e70b5a;
 }
 
 .profile header {
@@ -70,16 +70,15 @@ nav a:hover {
 .jumbotron {
     font-size: 20px;
     padding: 60px;
-    background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+    background-color: #ffa1ba;
     text-align: center;
-    color: white;
+    color: #efefec;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    margin: 10px 0;   /* ✅ kasih jarak atas bawah */
 }
 
 ul {
@@ -90,12 +89,12 @@ ul {
 
 nav li {
     display: inline-block;
-    margin: 0 15px;   /* ✅ jarak kanan kiri */
+    margin: 0 10px;
 }
 
 
 nav {
-     background: linear-gradient(135deg, #000, #3A0CA3, #9D50BB, #3A0CA3, #000);
+    background-color: #F1879E;
     padding: 5px;
 
     position: sticky;
@@ -130,7 +129,6 @@ aside {
     font-weight: bold;
     border: none;
     border-radius: 50px;
-    /* bikin lonjong */
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
@@ -179,6 +177,7 @@ header {
     }
 
 }
+
 
 
 
