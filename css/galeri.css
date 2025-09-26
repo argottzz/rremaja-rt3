@@ -10,7 +10,7 @@ body {
 }
 
 h2 {
-  color: #1A2A80;
+  color: #e70b5a;
 }
 
 p {
@@ -20,7 +20,7 @@ p {
 footer {
   padding: 20px;
   color: white;
- background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+  background-color: #ffa1ba;
   text-align: center;
   font-weight: bold;
 }
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-   color: red;
+  color: #e70b5a;
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -63,18 +63,16 @@ nav a:hover {
 .jumbotron {
   font-size: 20px;
   padding: 60px;
- background: linear-gradient(135deg, #FFF, #d63384, #f564a9, #d63384, #FFF);
+  background-color: #ffa1ba;
   text-align: center;
   color: white;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin: 10px 0;   /* ✅ kasih jarak atas bawah */
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
-
 
 ul {
   padding-inline: 4rem;
@@ -83,17 +81,17 @@ ul {
 }
 
 .white {
- color: white;
- font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 15px;   /* ✅ jarak kanan kiri */
+  display: inline-block;
+  margin: 0 10px;
 }
 
 nav {
-   background: linear-gradient(135deg, #000, #3A0CA3, #9D50BB, #3A0CA3, #000);
+  background-color: #F1879E;
   padding: 5px;
   position: sticky;
   top: 0;
@@ -103,7 +101,7 @@ nav {
 main {
   padding: 20px;
   display: flex;
-  flex-direction: column; /* ubah ke kolom, bukan horizontal */
+  flex-direction: column;
   gap: 1.5rem;
 }
 
@@ -119,54 +117,18 @@ header {
   display: inline;
 }
 
-/* FOTO */
-.foto-container {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;   /* bisa digeser ke samping */
-  padding: 10px;
-  flex-wrap: nowrap;  /* cegah turun ke bawah */
-  scroll-behavior: smooth; /* biar halus */
-}
 
-/* VIDEO */
-.video-container {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;   /* bisa digeser ke samping */
-  padding: 10px;
-  flex-wrap: nowrap;
-  scroll-behavior: smooth;
-}
-
-/* FOTO & VIDEO: ukuran seragam */
-.foto-card, .video-card {
-  flex: 0 0 auto;
-  width: 250px;       /* samakan lebar */
-  height: 200px;      /* samakan tinggi */
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.foto-card img, 
-.video-card video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* biar isi pas, tidak ketarik */
-  border-radius: 8px;
-  display: block;
-}
-.btn-lanjut, .btn-tiktok, .btn-yutub, .btn-spotipi, .btn-watsap, .btn-drive {
+.btn-lanjut,
+.btn-tiktok,
+.btn-yutub,
+.btn-spotipi,
+.btn-watsap,
+.btn-drive {
   display: flex;
   flex: 1;
   min-width: 120px;
-    justify-content: center;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   padding: 12px 28px;
   color: white;
   font-weight: bold;
@@ -183,22 +145,27 @@ header {
 .btn-lanjut {
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
+
 .btn-tiktok {
   background: linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
 }
+
 .btn-yutub {
   background: linear-gradient(45deg, #FF0000, #CC0000, #FF4E45);
 }
+
 .btn-spotipi {
   background: linear-gradient(45deg, #1DB954, #1ed760, #191414);
 }
+
 .btn-watsap {
   background: linear-gradient(45deg, #25D366, #128C7E);
 }
+
 .btn-drive {
-     background: linear-gradient(135deg, #0F9D58, #F4B400, #4285F4); 
+  background: linear-gradient(135deg, #0F9D58, #F4B400, #4285F4);
 }
-        
+
 
 .btn-lanjut:hover,
 .btn-tiktok:hover,
@@ -213,9 +180,11 @@ header {
   display: none;
   position: fixed;
   z-index: 1000;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.95);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
   justify-content: center;
   align-items: center;
 }
@@ -224,7 +193,7 @@ header {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 #overlay #close {
@@ -242,11 +211,64 @@ header {
   color: red;
 }
 
+/* FOTO */
+.foto-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  /* bisa digeser ke samping */
+  padding: 10px;
+  flex-wrap: nowrap;
+  /* cegah turun ke bawah */
+  scroll-behavior: smooth;
+  /* biar halus */
+}
+
+/* VIDEO */
+.video-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  /* bisa digeser ke samping */
+  padding: 10px;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* FOTO & VIDEO: ukuran seragam */
+.foto-card,
+.video-card {
+  flex: 0 0 auto;
+  width: 250px;
+  /* samakan lebar */
+  height: 200px;
+  /* samakan tinggi */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-card img,
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* biar isi pas, tidak ketarik */
+  border-radius: 8px;
+  display: block;
+}
+
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
   main {
     flex-flow: column nowrap;
   }
+
   main aside {
     align-self: center;
   }
@@ -256,6 +278,7 @@ header {
   nav ul {
     justify-content: center;
   }
+
   main aside {
     align-self: stretch;
   }
@@ -268,22 +291,26 @@ header {
   }
 }
 
-/* Responsif tombol di HP */
 @media screen and (max-width: 600px) {
-  .btn-lanjut, .btn-tiktok, .btn-yutub, .btn-spotipi, .btn-watsap, .btn-drive {
-    flex: 1 1 100%;   /* otomatis full width */
-    margin: 5px 0;   /* biar lebih rapat tapi rapi */
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .foto-container, .video-container {
+  .btn-lanjut,
+  .btn-tiktok,
+  .btn-yutub,
+  .btn-spotipi,
+  .btn-watsap,
+  .btn-drive {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+  }
+
+@media screen and (max-width: 992px) {
+
+  .foto-container,
+  .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    overflow-x: hidden; /* grid tidak perlu scroll */
+    overflow-x: hidden;
   }
 }
-
-
-
